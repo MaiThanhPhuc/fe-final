@@ -29,12 +29,12 @@
           <ng-template pTemplate="body" let-category>
             <tr>
               <td>{{ category.name }}</td>
-              <td><i style="font-size: 2rem" class="pi" [ngClass]="'pi-' + category.icon"></i></td>
+              <td><i style="font-size: 2rem" class="pi" [ngClass]="'pi-' + category?.icon"></i></td>
               <td>
                 <i
                   class="pi pi-circle-on"
                   style="font-size: 2rem"
-                  [ngStyle]="{ color: category.color }"
+                  [ngStyle]="{ color: category?.color }"
                 ></i>
               </td>
               <td>
