@@ -33,7 +33,9 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
     });
   }
-
+  onClick(){
+   this.router.navigate(['/signup']);
+  }
   onSubmit() {
     this.isSubmitted = true;
 
