@@ -20,7 +20,7 @@ export class ProductsFormComponent implements OnInit, OnDestroy {
   imageDisplay: string | ArrayBuffer;
   currentProductId: string;
   endsubs$: Subject<any> = new Subject();
-
+  imagesDisplay: string[] | ArrayBuffer[];
   constructor(
     private formBuilder: FormBuilder,
     private productsService: ProductsService,
