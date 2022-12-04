@@ -33,7 +33,14 @@
                   "with": "environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
@@ -150,7 +157,14 @@
                   "with": "environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
@@ -321,6 +335,7 @@
     }
   },
   "cli": {
+    "analytics": "4acd7512-4f61-4542-990c-aac62534147e",
     "defaultCollection": "@nrwl/angular"
   },
   "schematics": {
